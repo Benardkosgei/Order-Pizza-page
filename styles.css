@@ -1,0 +1,130 @@
+/* Add your CSS styles here to customize the appearance of the website */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  background-color: #333;
+  padding: 10px;
+}
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.7s;
+}
+nav ul li a:hover{
+  background-color: #555;
+  color: #ee3;
+}
+header h1 {
+  margin: 0;
+}
+
+nav {
+  /* Add your navigation styles here */
+}
+
+main {
+  padding: 20px;
+}
+
+.hero {
+  /* Add styles for the hero section */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/* Home page */
+
+/* Grid Layout styles */
+.pizza-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Three equal columns */
+  grid-gap: 10px; /* Gap between grid items */
+}
+
+.item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.item img{
+  width: 100%;
+}
+.item a{
+  margin-top: 8px;
+  text-decoration: none;
+  background-color:#00fff0;
+  padding: 10px 0;
+  transition: all 0.7s;
+
+}
+.item a:hover{
+  background-color:#00ff00;
+  color: #000;
+}
+/* order page*/
+
+.order-form{
+  width:70%;
+  border: 1px #eee solid;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+label{
+  font-weight:bold;
+}
+input[type="text"],input[type="number"],input[type="email"],select{
+  width: 50%;
+  padding: 10px;
+  margin:9px 0;
+  border-radius: 5px;
+}
+input[type="submit"]{
+  width: 150px;
+  font-size: 17px;
+   margin-top: 10px;
+   padding: 5px 0;
+   background-color:#00fff0;
+   border: 1px #00ff00 solid;
+   border-radius: 5px;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+/*Small screen*/
+@media only screen and (max-width: 768px) {
+  .order-form{
+    width: 80%;
+    margin: auto;
+  }
+  .pizza-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+  grid-gap: 10px; /* Gap between grid items */
+}
+  }
